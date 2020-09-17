@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Numans', sans-serif;
+}
+
+body {
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator {
+  position: relative;
+  display: grid;
+}
+
+.calculator .value {
+  grid-column: span 4;
+  height: 100px;
+  text-align: right;
+  border: none;
+  outline: none;
+   
+  font-size: 18px;
+  cursor: default;
+}
+
+.calculator span {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  background: #22272b;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);  
+  cursor: default;
+}
+
+.calculator span:active {
+  background: #393f49;
+  color: rgb(238, 241, 41);
+}
+
+.calculator span.clear {
+  grid-column: span 2;
+  width: 120px;
+  background-color: goldenrod;
+}
+
+.calculator span.plus {
+  grid-row: span 2;
+  height: 120px;
+}
+
+.calculator span.equal {
+  background-color: #606572;
+}
