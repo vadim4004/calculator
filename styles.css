@@ -21,6 +21,7 @@ body {
 .calculator {
   position: relative;
   display: grid;
+  border: 1px dotted rgba(0, 0, 0, 0.2);
 }
 
 .calculator .value {
